@@ -14,3 +14,8 @@
 1. Se comentó el script para crear las categorias en la base de datos.
 1. Se creó script de **npm** para revisar errores de **ESLint** (`npm run eslint`).
 1. Se creó script de **npm** para arreglar errores de **ESLint** (`npm run eslint-fix`).
+1. Se agregó `.env` al archivo `.gitignore`.
+1. Se removió el script para crear las categorias en la base de datos.
+1. Se exportaron a un archivo de constantes los valores de las categorias.
+1. Se actualizaron los métodos del controlador `TaskController` para volverlos funcionales.
+1. Se modificaron los modelos para que reflejen la misma estructura que en el *front-end*.

@@ -1,5 +1,4 @@
 import { Schema, model } from 'mongoose';
-export const CATEGORIES = ['green', 'red', 'yellow'];
 
 const categorySchema = new Schema(
     { name: String },

@@ -2,29 +2,29 @@ import { Schema, model } from 'mongoose';
 
 const tasksSchema = Schema(
     {
-        name: {
+        title: {
             type: 'string',
             required: true,
             trim: true
         },
         description: {
             type: String,
-            required: true,
-            trim: true,
+            required: false,
+            trim: true
         },
-        date: {
-            type: Date,
-            default: Date.now()
-        },
-        deadLine: {
-            type: Date,
-            required: true,
-        },
-        category:
-        {
+        category: {
             type: Schema.Types.ObjectId,
-            ref: 'Category',
+            ref: 'Category'
         },
+        endDate: {
+            type: Date,
+            required: true,
+        },
+        isCompleted: {
+            type: Boolean,
+            required: true,
+            default: false
+        }
     },
     {
         timestamps: true,
